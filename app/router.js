@@ -3,6 +3,7 @@
  */
 module.exports = app => {
   const { router, controller } = app;
-  router.get('/home', controller.home.index);
-  router.get('/user', controller.user.index);
+  router.get('/admin', controller.admin.getSchema);
+  router.post('/admin', controller.admin.saveSchema);
+  // router.get('/user', controller.user.index);
 };

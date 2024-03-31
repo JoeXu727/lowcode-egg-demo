@@ -32,6 +32,7 @@ module.exports = (appInfo) => {
   config.cors = {
     origin: "http://localhost:5556", // 匹配规则  域名+端口  *则为全匹配
     allowMethods: "GET, POST, PUT, DELETE, OPTIONS", // 允许请求的方式
+    credentials: true,
   };
 
   // mysql数据库配置
